@@ -1,6 +1,5 @@
-from lab import even_or_odd
-
-if __name__ == "__main__":
-    num = int(input("Enter a number: "))
-    result = even_or_odd(num)
-    print("The number {num} is {result}.")
+def even_or_odd(num):
+    if num % 2 == 0:
+        return "even"
+    else:
+        return "odd"
