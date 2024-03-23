@@ -1,0 +1,7 @@
+3.CHANGE THE STRING TO TUPLE
+
+3.string="my ,name ,is ,praneetha ,adaiahgari".split(",")
+
+tupl=tuple(string)
+print(tupl)
+
