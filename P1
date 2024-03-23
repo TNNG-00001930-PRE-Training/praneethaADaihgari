@@ -1,0 +1,7 @@
+1. PRINT THE NUMBERS WHICH ARE DIVISABLE BY 7 NOT WITH 5
+
+1.def num():
+    for i in range(200,3201):
+        if i%5!=0 and i%7==0:
+            print(i)
+num()
