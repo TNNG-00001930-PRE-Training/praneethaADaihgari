@@ -1,0 +1,10 @@
+2.GENARATE A DICT WITH POWER OF NUMBER
+
+2.def power(n):
+    dict={}
+    for i in range(1,n+1):
+        dict[i]=i**i
+    return dict
+num=int(input("enter the number : "))
+result=power(num)
+print(result)
