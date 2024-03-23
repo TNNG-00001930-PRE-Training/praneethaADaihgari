@@ -1,0 +1,36 @@
+def add(x,y):
+    return x+y
+def subtract(x,y):
+    return x-y
+def multiply(x,y):
+    return x*y
+def div (x,y):
+    if y==0:
+        return "error: cont divide by zero:"
+    else:
+        return x/y
+def main():
+    while True:
+        print("select operation: ")
+        print("1.ADDITION")
+        print("2.subsraction")
+        print("3.multiplication")
+        print("4.divission")
+        choice=input("enter your option")
+        if choice in ('1','2','3','4'):
+            num1=float(input("enter number"))
+            num2=float(input("enter number2"))
+        if choice=='1':
+            print("result",add(num1,num2))
+        elif choice=='2':
+            print("result",subtract(num1,num2))
+        elif choice=='3':
+            print("result",multiply(num1,num2))
+        elif choice=='4':
+            print("result",div(num1,num2))
+        elif choice=='5':
+            print("exit")
+        else:
+            print("invalid option")
+if __name__=='__main__':
+    main()
