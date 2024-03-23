@@ -1,0 +1,30 @@
+import random
+while True:
+
+    number=random.randint(1,1000)
+    print(number)
+    limit=7
+    while limit>0:
+    
+        print("remaining attempts",limit)
+        
+    
+        guess=int(input("guess the number:  "))
+        if number==guess:
+                print("congrag,your guess is correct")
+        elif number>guess:
+                print("ur guess less than the number:")
+        elif guess>number:
+                print("ur guess greater than number")
+        else:
+                print("guess out of range")
+        limit=limit-1
+    if limit==0:
+    
+    
+        print("better luck next time you are out of range:")
+    choice=input("do you want to continue it: y/n").lower()
+    if choice!='y':
+        print('thanks for playing: ')
+        break
+        
